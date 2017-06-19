@@ -38,17 +38,17 @@ This portion of code will output
       "art":"/:/resources/show-fanart.jpg",
       "identifier":"com.plexapp.plugins.library",
       "librarySectionID":2,
-      "librarySectionTitle":"Animes",
-      "librarySectionUUID":"2f9f2a17-9ae5-4aec-b2a1-cf08e5a1c150",
+      "librarySectionTitle":"Folder",
+      "librarySectionUUID":"2f9f2a17-9ae5-4aec-a2q1-cf08c5b1d150",
       "mediaTagPrefix":"/system/bundle/media/flags/",
-      "mediaTagVersion":1491999474,
+      "mediaTagVersion":1491998473,
       "mixedParents":true,
       "nocache":true,
       "thumb":"/:/resources/show.png",
-      "title1":"Animes",
+      "title1":"Folder",
       "title2":"On Deck",
       "viewGroup":"episode",
-      "viewMode":65592,
+      "viewMode":64591,
       "Metadata":[  ]
    }
 }
