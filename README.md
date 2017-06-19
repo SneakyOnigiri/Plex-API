@@ -1,7 +1,7 @@
 # Plex-API
 PHP library for Plex
 
-[Toast](#some-anchor)
+[Toast](##some-anchor)
 
 Function | Parameters | Description
 -------- | ---------- |-----------
@@ -19,7 +19,7 @@ GetOnDeck | | Get the list of paused shows
 GetPhoto | string $url / int $width / int $height | Get a library image (Artwork, thumb, ...)
 MyAccount | | Get Plex account information (Based on token)
 
-# Some-anchor
+## Some-anchor
 sdqsdqsd
 qsdqsdqsd
 qsdqsdqsd
