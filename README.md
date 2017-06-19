@@ -18,7 +18,7 @@ GetOnDeck | | Get the list of paused shows
 GetPhoto | string $url / int $width / int $height | Get a library image (Artwork, thumb, ...)
 MyAccount | | Get Plex account information (Based on token)
 
-(#anchor)
+#anchor
 sdqsdqsd
 qsdqsdqsd
 qsdqsdqsd
