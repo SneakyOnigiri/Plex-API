@@ -1,7 +1,7 @@
 # Plex-API
 PHP library for Plex
 
-[Toast](##some-anchor)
+[Toast](#some-anchor)
 
 Function | Parameters | Description
 -------- | ---------- |-----------
