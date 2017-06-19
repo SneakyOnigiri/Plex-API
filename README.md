@@ -1,8 +1,11 @@
 # Plex-API
 PHP library for Plex
 
-[Toast](#some-anchor)
+Summary:
+*[Table](#Table)
+**Functions**
 
+## Table
 Function | Parameters | Description
 -------- | ---------- |-----------
 __construct | | Create object
