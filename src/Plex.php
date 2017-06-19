@@ -1,6 +1,6 @@
 <?php
   /**
-  * Simple class for Plex API
+  * Simple library for Plex API
   *
   * PHP version 7
   *
@@ -30,7 +30,7 @@
     * @param string $format   Data format
     *
     */
-    public function __construct($host, $port, $token, $format){
+    public function __construct(string $host, string $port, string $token, string $format = 'json'){
       $this->_host = $host;
       $this->_port = $port;
       $this->_access_token = $token;
@@ -111,7 +111,7 @@
     *
     * @return string|array    All media containing the string in json format or as an associative array
     */
-    public function Search($query){
+    public function Search(string $query){
       $query = filter_var($query, FILTER_SANITIZE_ENCODED);
       $ch = curl_init($this->_base_url . '/search?query=' . $query);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -159,7 +159,7 @@
     *
     * @return string|array     Filtered media of the section in json format or as an associative array
     */
-    public function BrowseSection($id, $key){
+    public function BrowseSection(int $id, $key = 'all'){
       $ch = curl_init($this->_base_url . '/library/sections/' . $id . '/' . $key);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
       curl_setopt($ch, CURLOPT_HTTPHEADER, array(
@@ -183,7 +183,7 @@
     *
     * @return bool            Return true if successful, false if the section wasn't found
     */
-    public function DeleteSection($id){
+    public function DeleteSection(int $id){
       $ch = curl_init($this->_base_url . '/library/sections/' . $id . '/');
       curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -275,7 +275,7 @@
     *
     * @return resource            Return image
     */
-    public function GetPhoto($url, $width, $height){
+    public function GetPhoto(string $url, int $width, int $height){
       $url = filter_var($url, FILTER_SANITIZE_ENCODED);
       $ch = curl_init($this->_base_url . '/photo/:/transcode?url=' . $url . '&width=' . $width . '&height=' . $height);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
