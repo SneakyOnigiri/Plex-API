@@ -1,10 +1,6 @@
 # Plex-API
 PHP library for Plex
 
-Summary:
-*[Table](#Table)
-**Functions**
-
 ## Table
 Function | Parameters | Description
 -------- | ---------- |-----------
@@ -22,9 +18,4 @@ GetOnDeck | | Get the list of paused shows
 GetPhoto | string $url / int $width / int $height | Get a library image (Artwork, thumb, ...)
 MyAccount | | Get Plex account information (Based on token)
 
-## Some-anchor
-sdqsdqsd
-qsdqsdqsd
-qsdqsdqsd
-qsdqsdqsd
-qsdqsdqsd
+## Documentation
